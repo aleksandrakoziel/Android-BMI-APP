@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">BMI CALCULATOR</string>
+    <string name="massString">MASS</string>
+    <string name ="heightString">HEIGHT</string>
+    <string name="countString">COUNT</string>
+    <string name="yourBmiString">YOUR BMI</string>
+    <string name = "amountString">00.00</string>
+    <string name = "typeMassString">000.00</string>
+    <string name = "typeHeightString">0.00</string>
+    <string name = "metric">METRIC UNITS</string>
+    <string name = "imperial">IMPERIAL UNITS</string>
+    <string name = "kg">KG</string>
+    <string name = "m">CM</string>
+    <string name="share">SHARE</string>
+    <string name="save">SAVE</string>
+    <string name="about_bmi">ABOUT BMI</string>
+    <string name="about_text">THE TRUTH ABOUT BMI</string>
+    <string name="bmiDescription">Body Mass Index (BMI) is a person\'s weight in kilograms divided by the square of height in meters. A high BMI can be an indicator of high body fatness. BMI can be used to screen for weight categories that may lead to health problems but it is not diagnostic of the body fatness or health of an individual.</string>
+    <string name="bmiUnderDes">If your BMI is under 18.5 you should know, that being underweight can damage your health. Weighing too little can contribute to a weakened immune system, fragile bones and feeling tired. So go eat Snicers bar!</string>
+    <string name="underweight">UNDERWEIGHT</string>
+    <string name="normal">NORMAL</string>
+    <string name="goodWeight">If your BMI is between 18.5 and 24.9, you are in the recommended weight range for your height. But your health may still be at risk if you are not getting regular physical activity and practicing healthy eating. Good job! You owe yourself a Snicers bar!</string>
+    <string name="overweight">If your BMI is 25 to 29.99, you are in the overweight category. This may or may not be unhealthy, depending on some other things, like your waist size and other health problems you may have. So if you are not an athlete, no more Snicrers bars for a while! </string>
+    <string name="overweightInfo">OVERWEIGHT</string>
+    <string name="obesityDes">If your BMI is 30 or higher, you\'re in the obese category. You may need to lose weight and change your eating and activity habits to get healthy and stay healthy. Burn all Snicers bars in the house and start to burn your own fat!  </string>
+    <string name="obesity">OBESITY</string>
+    <string name="imperialUnits">IMPERIAL UNITS</string>
+    <string name="layoutKg">KG</string>
+    <string name="layoutCm">CM</string>
+    <string name="metricUnits">METRIC UNITS</string>
+    <string name="layoutLb">LB</string>
+    <string name="layoutFt">FT</string>
+    <string name="monitShareStart">My BMI is</string>
+    <string name="monitShareUnderweight">! So please, buy me a Snicers bar or 5 pounds of chocolate!</string>
+    <string name="monitShareNormal">! I am healthy and beautiful and I owe myself a Snicers for being awesome.</string>
+    <string name="monitShareOverweight">! I should quit the sweets for a while... but not yet. I will start tomorrow.</string>
+    <string name="monitShareObesity">! I am not fat, I am just full of love.</string>
+    <string name="monitShareAppId">Sended via BMI CALCULATOR APP</string>
+    <string name="toastWrongImput">WRONG INPUT, PLEASE TRY AGAIN</string>
+    <string name="toastAllData">PLEASE ENTER ALL DATA</string>
+    <string name="toastExport">EXPORT PROBLEM</string>
+    <string name="toastClick">PLEASE, CLICK ON THE COUNT BUTTON BEFORE SHARING</string>
+
+
+</resources>

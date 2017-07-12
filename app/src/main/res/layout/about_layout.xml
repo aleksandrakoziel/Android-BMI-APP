@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/additionalColor"
+    android:id="@+id/aboutInfo">
+
+    <TextView
+        android:id="@+id/aboutYourBmi"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal|top"
+        android:width="220dp"
+        android:height="220dp"
+        android:background="@drawable/roundgrey2"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:text="@string/about_text"
+        android:textColor="@color/backgroundColor"
+        android:textSize="27sp"
+        android:layout_marginTop="55dp"
+        android:layout_alignTop="@+id/imageViewAbout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/aboutYourBmiDescription"
+        android:layout_width="280dp"
+        android:layout_height="240dp"
+        android:text="@string/bmiDescription"
+        android:textColor="@color/backgroundColor"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="center"
+        android:layout_below="@+id/aboutYourBmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:id="@+id/imageViewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ask"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/aboutYourBmi" />
+
+</RelativeLayout>

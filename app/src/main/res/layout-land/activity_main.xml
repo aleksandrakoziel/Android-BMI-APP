@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.aleksandra.koziel_swim_lab2.MainActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+    <RelativeLayout
+        android:id="@+id/moodLayout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.55"
+        android:background="@color/additionalColor">
+
+
+        <TextView
+            android:id="@+id/yourBmi"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal|top"
+            android:width="220dp"
+            android:height="220dp"
+            android:background="@drawable/roundgrey2"
+            android:gravity="center"
+            android:paddingTop="75dp"
+            android:text="@string/amountString"
+            android:textColor="@color/backgroundColor"
+            android:textSize="70dp" />
+
+        <TextView
+            android:id="@+id/bmiSignature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/yourBmi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:gravity="center"
+            android:text="@string/yourBmiString"
+            android:textColor="@color/backgroundColor"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/bmiSignature"
+            android:layout_marginBottom="28dp"
+            android:layout_marginEnd="35dp"
+            android:layout_toStartOf="@+id/countButton"
+            android:src="@drawable/ask" />
+
+        <Button
+            android:id="@+id/countButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/circle2"
+            android:paddingTop="25dp"
+            android:text="@string/countString"
+            android:textColor="@color/additionalColor"
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dataLayout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.45"
+        android:background="@color/backgroundColor">
+
+        <TextView
+            android:id="@+id/mass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="20dp"
+            android:text="@string/massString"
+            android:textSize="20dp"
+            android:layout_marginBottom="9dp"
+            android:layout_above="@+id/yourMass"
+            android:layout_alignStart="@+id/yourMass" />
+
+        <TextView
+            android:id="@+id/myHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:height="30dp"
+            android:text="@string/heightString"
+            android:textSize="20dp"
+            android:layout_marginStart="22dp"
+            android:layout_below="@+id/yourMass"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/yourMass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:gravity="right|bottom"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:paddingTop="10dp"
+            android:selectAllOnFocus="true"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@+id/massUnits"
+            android:layout_alignBottom="@+id/massUnits"
+            android:layout_alignStart="@+id/myHeight" />
+
+        <EditText
+            android:id="@+id/yourHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:gravity="right|bottom"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:paddingTop="10dp"
+            android:selectAllOnFocus="false"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@+id/heightUnits"
+            android:layout_alignBottom="@+id/heightUnits"
+            android:layout_alignStart="@+id/myHeight" />
+
+        <TextView
+            android:id="@+id/massUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/kg"
+            android:textSize="20dp"
+            android:layout_below="@+id/menuHamburgerButton"
+            android:layout_alignStart="@+id/heightUnits" />
+
+        <TextView
+            android:id="@+id/heightUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/m"
+            android:textSize="20dp"
+            android:layout_below="@+id/myHeight"
+            android:layout_toEndOf="@+id/yourHeight"
+            android:layout_marginStart="17dp" />
+
+        <Button
+            android:id="@+id/menuHamburgerButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:alpha="0.3"
+            android:background="@drawable/hamburgerblack"
+            android:onClick="onPopupButtonClick"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/heightUnits" />
+
+        <Button
+            android:id="@+id/units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColor"
+            android:text="@string/imperial"
+            android:textColor="@color/additionalColorDark"
+            android:textSize="15dp"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/yourHeight"
+            android:layout_alignEnd="@+id/massUnits" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
